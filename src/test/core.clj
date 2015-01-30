@@ -1,5 +1,12 @@
 (ns test.core)
 
 ( require '[clojure.core.typed :as t])
-(t/ann ^:no-check clojure.data/diff [( clojure.lang.PersistentVector clojure.lang.PersistentVector) -> clojure.lang.PersistentVector])
-
+(t/ann ^:no-check clojure.set/subset?[(t/Set) (t/Set)  -> Boolean])
+(t/ann ^:no-check clojure.set/superset? [(t/Set) (t/Set)  -> Boolean])
+(t/ann ^:no-check clojure.set/join [(t/Set) (t/Set)  -> t/Set])
+(t/ann ^:no-check clojure.set/index [(t/Set) (t/Vec)  -> t/Map])
+(t/ann ^:no-check clojure.set/map-invert [(t/Map)  -> t/Map])
+(t/ann ^:no-check clojure.set/project [(t/Set) (t/Vec) -> t/Set])
+(t/ann ^:no-check clojure.set/rename [(t/Set) (t/Map) -> t/Set])
+(t/ann ^:no-check clojure.set/rename-keys [(t/Set) (t/Map) -> t/Set])
+(t/ann ^:no-check clojure.set/select [(t/Set) -> t/Set])
