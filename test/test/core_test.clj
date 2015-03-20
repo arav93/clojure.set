@@ -1,7 +1,8 @@
 (ns test.core-test
-  (:require [clojure.test :refer :all]
-            [test.core :refer :all]))
+ (:use clojure.test)
+ (:require [clojure.core.typed :as t])
+ (:require test.core) 
+)
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest subset-test
+  (is (t/check-ns 'test.subset)))
