@@ -3,7 +3,7 @@
 
 (t/ann ^:no-check clojure.set/subset?[(t/Set t/Any) (t/Set t/Any)  -> Boolean])
 (t/ann ^:no-check clojure.set/superset? [(t/Set t/Any) (t/Set t/Any)  -> Boolean])
-(t/ann ^:no-check clojure.set/join [(t/Set t/Any) ((t/Set t/Any)  -> (t/Set t/Any)])
+(t/ann ^:no-check clojure.set/join [(t/Set t/Any) (t/Set t/Any)  -> (t/Set t/Any)])
 (t/ann ^:no-check clojure.set/index [(t/Set t/Any) (t/Vec t/Any)  -> (t/Map t/Any t/Any )])
 (t/ann ^:no-check clojure.set/map-invert [(t/Map t/Any t/Any )  -> (t/Map t/Any t/Any)])
 (t/ann ^:no-check clojure.set/project [(t/Set t/Any) (t/Vec t/Any) -> (t/Set t/Any)])
